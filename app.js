@@ -6,7 +6,9 @@ let path = require ("path");
 
 app.use(express.static('public'));
 
-app.listen(4011, ()=>{ console.log('Servidor corriendo en http://localhost:4011/'); });
+const PORT = process.env.PORT || 4011
+
+app.listen(PORT, ()=>{ console.log('Servidor corriendo en http://localhost:4011/'); });
 
 app.get('/', (req,res)=>{    res.sendFile(path.resolve("./views/home.html")); });
 
