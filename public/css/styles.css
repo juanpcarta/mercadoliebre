@@ -68,6 +68,7 @@ header .form .input{
 
     text-decoration: none;
     display: inline-block;
+    color:black;
     
 }
 
@@ -131,7 +132,7 @@ h3{
     font-size: 16px;
     font-weight: normal;
     display:none;
-    transition: color 450ms;
+    transition: display 450ms;
 
 }
 
@@ -177,8 +178,16 @@ footer i {
     color: #0044AA;
     size: 2em;
     margin-bottom: 10px;
+    transition: color 100ms;
 
 }
+
+footer i:hover {
+
+    color: #39b54a;
+
+}
+
 
 footer section {
 
@@ -197,6 +206,8 @@ footer h4{
 main article{
         
     margin: 10px 0px;
+    height: fit-content;
+    transition: box-shadow;
 
 }
 
@@ -213,9 +224,17 @@ main section article i{
     position: absolute;
     right: 20px;
     top: -15px;
-    
+    transition: transform 1000ms;   
     
 }
+
+main section article i:hover{
+
+    transform: rotate(-90deg)
+
+}
+
+
 
 
 main section article i,
@@ -224,6 +243,11 @@ main section article i,
     color: #39b54a;
 
 }
+
+
+
+
+
 
 .price_discount{
 
@@ -245,14 +269,9 @@ article div.main-article{
 }
 
 @media (min-width: 361px){
-    main section article .description{
-        display: block;
-    }
 
-    main section article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    
-    }
+
+
     .main-header-bottom-bar{
         display:block;
          
@@ -353,3 +372,10 @@ justify-content: space-around;
 
 }
 
+main section article:hover {
+
+    
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+     
+
+}

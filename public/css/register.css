@@ -40,3 +40,9 @@ p{
     height: auto;
 
 }
+
+a {
+
+text-decoration: none;
+color: black;
+}
