@@ -176,7 +176,7 @@ footer{
 footer i {
 
     color: #0044AA;
-    size: 2em;
+    font-size: 2em;
     margin-bottom: 10px;
     transition: color 100ms;
 
