@@ -23,10 +23,11 @@ rel="stylesheet" />
                 <div class="logo">    
                     <img src="/images/logo-mercado-liebre.svg" alt="">
                 </div>  
-                <div class="form" action="#" method="GET">
-                    <div class="input">Buscar productos, marcas y más<i class="fa fa-search"></i>
-                    </div>  
-                </div>    
+                
+                <div class="search">
+                    <input type="text" class="query" value placeholder="Buscar productos, marcas y más"><i class="fa fa-search"></i> 
+                </div>  
+                    
             </div>   
             <p class= "dues"><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito </p>
         </div>
@@ -39,8 +40,8 @@ rel="stylesheet" />
 </ul>
 
 <ul class="right-navbar">
-    <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></a></i></li>
-    <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></a></i></li>
+<li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></a></i></li>
+<li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></a></i></li>
 <li><a href="#">Mis Compras <i class="fas fa-shopping-basket"></a></i></li>
     
 </ul>
@@ -54,13 +55,13 @@ rel="stylesheet" />
 </header>
 <main>
 
-    <form action="/registro" method="POST">
+    <form action="/" method="GET">
     
-        <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario">
+        <input required type="text" name="usuario" id="usuario" placeholder="Nombre de usuario">
         <br>
-        <input type="text" name="contraseña" id="contraseña" placeholder="Contraseña">
+        <input required type="text" name="contraseña" id="contraseña" placeholder="Contraseña">
         <br>
-        <button type="submit"><a style="text-decoration:none" href="/">Enviar</a></button>
+        <button type="submit" formaction="/">Enviar</button>
 
     </form>
 

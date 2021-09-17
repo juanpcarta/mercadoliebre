@@ -36,18 +36,42 @@ header div.logo{
 
 }
 
-header .form .input{
+
+
+.search{
     background-color: #FFF;
-    width: 100%;
+    width: 50%;
     outline: none;
     color: #666;
     padding: 2px;
+    padding-right: 9px;
     border-radius: 3px;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
+
+}  
+
+.search input{
+
+    width: 95%;
+    border: none;
+    outline: none;
+    text-decoration: none ;
+    
+
 }
 
-  
+
+.search i{
+
+    width: 5%;
+
+
+}
+
 
 .main-header-bottom-bar{
 
